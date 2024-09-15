@@ -21,15 +21,15 @@ namespace Proxy.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetUser(int id)
         {
-            
+            Log.Information($"Got request for user{id}");
             var user = await _userService.GetUserById(id);
             if (user == null)
             {
-                
+                Log.Information($"User{id} didn't find");
                 return NotFound($"User with id {id} not found.");
             }
-            
 
+            Log.Information($"Returning User{id}");
             return Ok(user);
         }
     }

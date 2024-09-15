@@ -1,0 +1,4 @@
+2024-09-15 13:13:35.215 +03:00 [INF] Starting web host
+2024-09-15 13:13:41.412 +03:00 [INF] Got request for user3
+2024-09-15 13:13:41.864 +03:00 [INF] User3 is adding in cache
+2024-09-15 13:13:41.865 +03:00 [INF] Returning User3
